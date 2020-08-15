@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> 
+    <title>Fabian Carrillo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+              <div class="logo">Fabian Carrillo</div>
+
+                <div class="btn">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </div>
+
+                <ul>
+                    <li><a href="#banner">home</a></li>
+                    <li><a href="#skills">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+<!--end of nav-->
+
+       <div class="banner" id="banner">
+           <div class="banner-center">
+               <h1>Software Engineer</h1>
+               <a href="#contact" id="bannerLink">Let's start building!</a>
+                 <div class="banner-icons">
+                   <a href="#" ><i class="fab fa-twitch banner-link"></i></a>
+                   <a href="#" ><i class="fab fa-instagram banner-link"></i></a>
+                   <a href="#" ><i class="fab fa-facebook banner-link"></i></a>
+               </div>
+           </div>
+       </div>
+<!--banner end-->
+   
+    </header>
+<!--header end-->
+
+   
+   
+    <section class="skills" id="skills">
+        <div class="skills-center">
+<!--SKILL ITEM-->
+               <article class="skill">
+                   <div class="skill-icon">
+                       <i class="fab fa-html5"></i>
+                   </div>
+                   <div class="skill-text">
+                       <h3>HTML</h3>
+                       <p>I can mark up complex website that require more than one page. Also, I am able to transform your PSD design into html.</p>
+                   </div>
+               </article>
+<!--END OF SKILL ITEM-->
+
+               <article class="skill">
+
+                   <div class="skill-icon">
+                       <i class="fab fa-css3"></i>
+                   </div>
+                   <div class="skill-text">
+                       <h3>CSS</h3>
+                       <p>With modern css creating a web page has never been easier, no need for reused themes when I can create a one from scatch!</p>
+                   </div>
+
+               </article>
+<!--END OF SKILL ITEM-->
+
+
+               <article class="skill">
+
+                   <div class="skill-icon">
+                       <i class="fab fa-js"></i>
+                   </div>
+
+                   <div class="skill-text">
+                       <h3>javascript</h3>
+                       <p>From simple script functions to more complex nesting functions. I can  get your job done.</p>
+                   </div>
+               </article>
+<!--END OF SKILL ITEM-->
+
+
+
+                 <article class="skill">
+                   <div class="skill-icon">
+                       <i class="fab fa-wordpress"></i>
+                   </div>
+                   <div class="skill-text">
+                       <h3>WORDPRESS</h3>
+                       <p>I can update your current site made with wordpress or develope a new theme with unique upgrades.</p>
+                   </div>
+               </article>
+<!--END OF SKILL ITEM-->
+        </div>
+    </section>
+<!--end of skills-->
+
+
+    
+    
+     <section id="contact">
+         <div class="contact-banner">
+            <article id="contact-info">
+                <img src="img/me.jpg" alt="">
+                <h3>Fabian U. Carrillo</h3>
+                <p>Hey! I'm an inspiring web developer from Los Angeles California. Feel free to contact me in regards to your project.</p>
+            </article>
+
+            <article id="contact-form">
+                <h2>contact me</h2>
+                <form action="">
+                  
+                         <input type="text" id="name" placeholder="Name">
+                     
+                     
+                           <input type="text" id="email" placeholder="Email">
+                    
+                     
+                          <textarea name="message" id="" cols="30" rows="10" placeholder="your message"></textarea>
+                    
+                    <button type="button">send</button>
+
+                 </form>
+             </article>
+         </div>
+     </section> 
+     
+     <script>
+    function eventListeners() {
+    document.querySelector('.btn').addEventListener("click", function () {
+        document.querySelector('ul').classList.toggle('nav--show');
+ 
+    });
+}
+
+eventListeners();
+    </script>
+</body>
+</html>
